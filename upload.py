@@ -33,12 +33,12 @@ except Exception as e:
 
 def LaunchOS():
     instances = ec2.create_instances(
-        ImageId="ami-0da59f1af71ea4ad2",
+        ImageId="ami-0cc9838aa7ab1dce7",
         MinCount=1,
         MaxCount=1,
         InstanceType="t2.micro",
       #  SecurityGroupIds=[
-      #  'sg-0072cb1b72ca4eeaf',
+      #  'sg-0bb421c553a3bd4e6',
    # ],
     )
     print("os launched ...")
